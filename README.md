@@ -22,9 +22,9 @@ If you take a look at the listing factory, you will notice that it is no longer 
 ### Angular-UI Router
 We will use [**Angular-UI Router**](https://github.com/angular-ui/ui-router/wiki), which is a framework that allows us to implement client-side routing with the concept of state. 
 
-On the server-side, the concept of "routing" refers to how Express handles requests made to the API. On the client-side, "routing" stands for something slightly different. In our application, the user will have several views that they can navigate to (a list view, individual listing view, map view, etc). Each of these parts of the user interface can be considered a specific **state** of the application. When I navigate to the map view, the applications "state" could be associated with displaying a map. 
+On the server-side, the concept of "routing" refers to how Express handles requests made to the API. On the client-side, "routing" stands for something slightly different. In our application, the user will have several views that they can navigate to (a list view, individual listing view, map view, etc). Each of these parts of the user interface can be considered a specific **state** of the application. When I navigate to the map view, the applications "state" could be considered with whatever logic is necessary to display a map. 
 
-Ideally, these states should have a URL associated with them. If a user is to type `www.directoryapp.com/listings/map` in the browser, they should see the map view discussed previously. This is where client-side routing differs from server-side routing. On the client-side, each URL is associated with a *specific application state*. 
+Ideally, these states should have a URL associated with them. If a user is to type `http://localhost:8080/listings/map` in the browser, they should see the map view discussed previously. This is where client-side routing differs from server-side routing. On the client-side, each URL is associated with a *specific application state*. 
 
 Go to the routes defined in the client-side config folder. You will notice there are several states associated with different views. 
 - If I were to type `http://localhost:8080/listings` into the browser, the UI-Router code defined in the routes should take me to the state `listings.list`
